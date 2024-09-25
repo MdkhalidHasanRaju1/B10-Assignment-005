@@ -11,7 +11,28 @@
 
 </head>
 <body>
-    <header>
+    <header class="sticky top-0 backdrop-blur-xl">
+         <!-- navber section start -->
+         <nav class="">
+            <div class="bg-[#F9F7F3] py-8">
+                <div class="flex flex-col lg:flex-row justify-between gap-4 p-2 lg:p-0 max-w-6xl mx-auto">
+                    <button id="btn-blog" class="px-8 py-3 bg-[#B4F461] text-xl font-bold rounded-lg">Blog</button>
+                    <div class="flex gap-4 justify-center items-center">
+                        <img class="border-2 border-dashed p-1" src="assets/logo.png" alt="">
+                        <h3 class="text-2xl font-bold">Donate Bangladesh</h3>
+                    </div>
+                    <div class="flex gap-2 justify-center items-center">
+                        <img class="border-2 border-dashed p-1" src="assets/coin.png" alt="">
+                        <h3 class="font-bold text-xl text-[#111111B3]"><span id="my-balance">6000</span> BDT</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center mt-8 gap-5">
+                <button id="btn-donation" class="px-8 py-4 rounded-lg bg-[#B4F461] font-bold text-lg">Donation</button>
+                <button id="btn-history" class="border px-8 py-4 rounded-lg bg-[#1111110D] font-bold text-lg">History</button>
+            </div>
+        </nav>
+        
 
     </header>
 
