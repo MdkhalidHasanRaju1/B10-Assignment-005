@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font aowsom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="bg-[#F9F7F3] py-8">
+            <div class="flex flex-col lg:flex-row gap-4 p-2 lg:p-0 justify-between max-w-6xl mx-auto">
+                <button id="btn-home" class="px-8 py-3 bg-[#B4F461] text-xl font-bold rounded-lg">Home</button>
+                <div class="flex gap-4 justify-center items-center">
+                    <img class="border-2 border-dashed p-1" src="assets/logo.png" alt="">
+                    <h3 class="text-2xl font-bold">Donate Bangladesh</h3>
+                </div>
+                <div class="flex gap-2 justify-center items-center">
+                    <img class="border-2 border-dashed p-1" src="assets/coin.png" alt="">
+                    <h3 class="font-bold text-xl text-[#111111B3]"><span id="my-balance">5500</span> BDT</h3>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="max-w-6xl mx-auto mt-6 p-2">
+        <div class="flex gap-2 justify-start items-center mb-4 p-2">
+            <h2 class="font-bold text-2xl">Important FAQ</h2>
+            <i class="fa-regular fa-circle-question text-2xl"></i>
+        </div>
+
+        <!-- question section -->
+        <div class="collapse collapse-arrow bg-base-200 border">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+                <p>(DOM) is a programming interface for web documents.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 border">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                <p>The getElementById method allows you to select an element</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 border">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM and why is it useful?</div>
+            <div class="collapse-content">
+                <p>Event delegation is a design pattern in JavaScript used to efficiently manage and handle events</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 border">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate and elements attributes and styles using the DOM</div>
+            <div class="collapse-content">
+                <p>If you want to change other attributes use the setAttribute() method.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="home.js"></script>
+</body>
+
+</html>

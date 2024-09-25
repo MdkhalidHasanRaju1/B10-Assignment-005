@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B10 Assignment-005</title>
+    <title>Assignment With DOM</title>
 
     <!-- daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+
 </head>
 <body>
     <header class="sticky top-0 backdrop-blur-xl">
-         <!-- navber section start -->
-         <nav class="">
+
+        <!-- navber start -->
+        <nav class="">
             <div class="bg-[#F9F7F3] py-8">
                 <div class="flex flex-col lg:flex-row justify-between gap-4 p-2 lg:p-0 max-w-6xl mx-auto">
                     <button id="btn-blog" class="px-8 py-3 bg-[#B4F461] text-xl font-bold rounded-lg">Blog</button>
@@ -23,7 +25,7 @@
                     </div>
                     <div class="flex gap-2 justify-center items-center">
                         <img class="border-2 border-dashed p-1" src="assets/coin.png" alt="">
-                        <h3 class="font-bold text-xl text-[#111111B3]"><span id="my-balance">6000</span> BDT</h3>
+                        <h3 class="font-bold text-xl text-[#111111B3]"><span id="my-balance">5500</span> BDT</h3>
                     </div>
                 </div>
             </div>
@@ -33,14 +35,16 @@
             </div>
         </nav>
         
-
     </header>
 
-    <main id="main-content" class="max-w-6xl mx-auto">
-        <!-- Flood at Noakhali  -->
+    <!-- Main section -->
+     <main id="main-content" class="max-w-6xl mx-auto">
+
+        <!-- Noakhali flood -->
         <section class="border-2  rounded-xl p-8 mt-14">
             <div class="flex flex-col lg:flex-row gap-8">
                 <img src="assets/noakhali.png" alt="">
+
                 <!-- BDT coin text input donate now section -->
                 <div>
                     <button class="flex gap-2 mb-4 bg-[#1111110D] px-4 py-3 rounded-lg">
@@ -118,8 +122,23 @@
                 </div>
             </div>
         </section>
+     </main>
 
-    </main>
+     <!-- History section -->
+     <section id="history-section" class="hidden mt-8 max-w-6xl mx-auto">
+        <div id="history-list">
+
+        </div>
+    </section>
+
+    <!-- 2nd section hidden -->
+     <section id="feni-history" class="hidden mt-8 max-w-6xl mx-auto">
+        <div id="feni-list">
+
+        </div>
+    </section>
     
+
+    <script src="index.js"></script>
 </body>
 </html>
