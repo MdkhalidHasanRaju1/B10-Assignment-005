@@ -28,7 +28,7 @@ document.getElementById('donate-now').addEventListener('click', function(){
         return donateInput, balanceNow;
     }
     else {
-        alert('Invalid Balance')
+        alert('insufficient Balance')
     }
 
 })
@@ -64,7 +64,7 @@ document.getElementById('feni-donate-now').addEventListener('click', function ()
         return feniInput, newMyBalance;
     }
     else {
-        alert('Invalid Balance')
+        alert('insufficient Balance')
     }
 
 })
@@ -101,7 +101,7 @@ document.getElementById('donate-injured').addEventListener('click', function () 
         return injuredInput, newMyBalance;
     }
     else {
-        alert('Invalide Balance')
+        alert('insufficient Balance')
     }
 })
 
